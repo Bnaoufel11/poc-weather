@@ -1,4 +1,3 @@
-/* Base styles */
 .App {
   text-align: center;
 }
@@ -15,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #87ceeb; /* Remplace le fond sombre par un bleu ciel */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,8 +24,32 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #333;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 80%;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  color: #ff5722;
+}
+
+.weather-description {
+  font-size: 1.2rem;
+  color: #666;
 }
 
 @keyframes App-logo-spin {
@@ -38,38 +61,17 @@
   }
 }
 
-/* New styles for the weather app */
-.weather-app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f0f8ff; /* Light blue background for a weather app feel */
-}
-
-.weather-app h1 {
-  color: #333;
-}
-
-.weather-app p {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-/* Responsive styles */
-@media (max-width: 600px) {
-  .weather-app {
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
     padding: 10px;
   }
 
-  .weather-app h1 {
-    font-size: 1.5em;
+  .App-logo {
+    height: 20vmin;
   }
 
-  .weather-app p {
-    font-size: 1em;
+  .weather-card {
+    width: 100%;
   }
 }
