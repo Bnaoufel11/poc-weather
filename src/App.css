@@ -1,3 +1,4 @@
+/* Base styles */
 .App {
   text-align: center;
 }
@@ -34,5 +35,41 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* New styles for the weather app */
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background for a weather app feel */
+}
+
+.weather-app h1 {
+  color: #333;
+}
+
+.weather-app p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .weather-app {
+    padding: 10px;
+  }
+
+  .weather-app h1 {
+    font-size: 1.5em;
+  }
+
+  .weather-app p {
+    font-size: 1em;
   }
 }
